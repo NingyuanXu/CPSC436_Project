@@ -6,22 +6,8 @@ import { IUser } from "../../shared/ModelInterfaces";
 
 interface IUserSchema extends Document, IUser {
     _id: string,
-    username: string,
-    fullname: string,
-    password: string,
-    gender: string,
-    major: string,
-    level: string,
-    avatarPath: string,
-    tags: ITag[],
-    friendUsernames: string[],
-    savedPostIds: string[],
-    hiddenPostIds: string[],
-    groups: string[]
 }
 
-export interface IUser extends IUserSchema {
-}
 
 interface IUserModel extends PassportLocalModel<IUserSchema> {
 }
